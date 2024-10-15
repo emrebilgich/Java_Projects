@@ -1,0 +1,19 @@
+package JavaProjeleri;
+import java.util.Scanner;
+public class JavaCalismalari{
+    public static void main(String[] args){
+        
+        double vergisizfiyat , vergi , vergilifiyat;
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Urunun vergisiz fiyatini giriniz: ");
+        vergisizfiyat = input.nextDouble();
+        
+        System.out.println("Urunun vergisini giriniz: ");
+        vergi = input.nextDouble();
+        
+        vergilifiyat = vergisizfiyat + vergisizfiyat * vergi/100;
+        
+        System.out.println("Urunun vergisiz fiyati: "+ vergisizfiyat + "Urunun vergisi: "+ vergi+ "Urunun vergili fiyati: "+ vergilifiyat) ;    
+    }  
+}
