@@ -1,0 +1,14 @@
+package java1;
+import java.util.Scanner;
+public class Java1 {
+public static void main(String[] args){
+Scanner scan = new Scanner(System.in);
+System.out.println("Sayi giriniz: ");
+int input = scan.nextInt();
+int k = 1;
+while (k <= input){
+    System.out.println(k);
+    k = k * 2;
+}
+} 
+}
