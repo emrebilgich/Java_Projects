@@ -1,0 +1,22 @@
+package java1;
+import java.util.Scanner;
+public class Java1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int havasicakligi;
+        System.out.println("Lutfen hava sicakligini giriniz: ");
+        havasicakligi = scan.nextInt();
+        if(havasicakligi>0 && havasicakligi<10){
+        System.out.println("Yuruyus yapabilirsiniz.");
+        }
+        else if(havasicakligi>10 && havasicakligi<20){
+        System.out.println("Bisiklet surebilirsiniz.");
+        }
+        else if(havasicakligi>20 && havasicakligi<30){
+        System.out.println("Yuzme yapabilirsiniz.");
+        }
+        else{
+        System.out.println("Tehlikeli hava sartlari!");
+        }      
+} 
+}
