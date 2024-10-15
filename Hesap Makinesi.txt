@@ -1,0 +1,31 @@
+package java1;
+import java.util.Scanner;
+public class Java1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sayi1 , sayi2 , secim;
+        System.out.println("Lutfen birinci sayiyi giriniz: ");
+        sayi1 = scan.nextInt();
+        System.out.println("Lutfen ikinci sayiyi giriniz: ");
+        sayi2 = scan.nextInt();
+        System.out.println("Lutfen seciminizi giriniz.");
+        System.out.println("1- Toplama\n 2- Cıkarma\n 3- Carpma\n 4- Bolme");
+        System.out.println("Seciminiz: ");
+        secim = scan.nextInt(); 
+        if(secim==1){
+        System.out.println("sayi1 ve sayi2 nin toplami: "+ (sayi1+sayi2));
+        }
+        else if(secim==2){
+        System.out.println("sayi1 ve sayi2 nin farki: "+ (sayi1-sayi2));
+        }
+        else if(secim==3){
+        System.out.println("sayi1 ve sayi2 nin carpimi: "+ (sayi1*sayi2));
+        }
+        else if(secim==4){
+        System.out.println("sayi1 ve sayi2 nin bolumu: "+ (sayi1/sayi2));
+        }
+        else{
+        System.out.println("İslem gecersiz.");
+        }     
+}  
+}
