@@ -1,0 +1,73 @@
+MAİN 
+package java1;
+public class Java1 {
+public static void main(String[] args) {
+    HesapMakinesi m1 = new HesapMakinesi(9,8,"Siyah"); //burada sayi1 sayi2 ve renki tanımladık
+    System.out.println(m1.toplama());
+    System.out.println(m1.cikarma());
+    System.out.println(m1.carpma());
+    System.out.println(m1.bolme());
+    System.out.println(m1.renk());
+    
+    m1.sayi1 = 5; //burada yeni makine1 e sayi1 olarak 5 i tanımladık alttaki metotta 9-5 olup 4 return olacak.
+    m1.sayi2 = 4;
+    m1.renk = "Sari";
+    
+    System.out.println(m1.toplama());
+    System.out.println(m1.cikarma());
+    System.out.println(m1.carpma());
+    System.out.println(m1.bolme());
+    System.out.println(m1.renk());
+    
+    HesapMakinesi m2 = new HesapMakinesi(10,7,"Mavi");
+    System.out.println(m2.toplama());
+    System.out.println(m2.cikarma());
+    System.out.println(m2.carpma());
+    System.out.println(m2.bolme());
+    System.out.println(m2.renk());
+
+    m2.sayi1 = 20; //Yeni degerlerimizi tanimladik alttaki islemlerde bu degerler kullanilacak.
+    m2.sayi2 = 15;
+    m2.renk = "Kirmizi";
+    
+    System.out.println(m2.toplama());
+    System.out.println(m2.cikarma());
+    System.out.println(m2.carpma());
+    System.out.println(m2.bolme());
+    System.out.println(m2.renk());
+    // bolmede 1 cikti cunku int olarak atadik ve tam deger dondu double tanimlasak vırgullu deger donecekti.
+}    
+}
+
+CLASS
+
+package java1;
+public class HesapMakinesi {
+    public int sayi1;
+    public int sayi2;
+    public String renk;
+    
+    HesapMakinesi(int sayi1 , int sayi2 , String renk){
+        this.sayi1 = sayi1; // this dedigimiz yer ustteki tanimlama yaptigimiz yerdeki degerdir digeri de hesapmakinesinin icine yazdigimiz degerdir birbirine esitler.
+        this.sayi2 = sayi2;
+        this.renk = renk;
+    }
+    
+    public int toplama(){ // metot olusturduk return ile ne donmesi gerektigine karar verdik.
+        return this.sayi1 + this.sayi2;
+    }
+    public int cikarma(){
+        return this.sayi1 - this.sayi2;
+    }
+    public int carpma(){
+        return this.sayi1 * this.sayi2;
+    }
+    public int bolme(){
+        return this.sayi1 / this.sayi2;
+    }
+    public String renk(){
+        System.out.println(this.renk);
+        return null;
+    }
+    
+}
