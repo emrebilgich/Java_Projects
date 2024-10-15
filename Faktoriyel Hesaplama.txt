@@ -1,0 +1,15 @@
+package java1;
+import java.util.Scanner;
+public class Java1 {
+public static void main(String[] args){
+Scanner scan = new Scanner(System.in);
+System.out.println("Faktoriyel sayisi giriniz: ");
+int f = scan.nextInt();
+int sonuc = 1 ;
+while (f>0){
+    sonuc *= f;
+    f--;
+}
+System.out.println(sonuc);
+} 
+}
