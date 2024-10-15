@@ -1,0 +1,26 @@
+package java1;
+import java.util.Scanner;
+public class Java1 {
+    public static void main(String[] args) {
+  Scanner scan = new Scanner(System.in);
+  System.out.println("Lutfen bir sayi giriniz: ");
+  int sayi = scan.nextInt();
+  
+  switch(sayi){
+      case 80:
+      System.out.println("Sayi 80 e esit.");
+      break;
+      case 81:
+      System.out.println("Sayi 81 e esit.");
+      break;
+      case 82:
+      System.out.println("Sayi 82 e esit.");
+      break;
+      case 83:
+      System.out.println("Sayi 83 e esit.");
+      default :
+      System.out.println("Gecersiz bir sayi girdiniz.");
+  }
+ 
+}  
+}
