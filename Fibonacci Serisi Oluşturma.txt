@@ -1,0 +1,20 @@
+package java1;
+import java.util.Scanner;
+public class Java1{
+public static void main(String[] args){
+    //0 ve 1 i yazarız a0=0 a1=1 a2=a0+a1 a3=a1+a2 olmalı o yüzden input = input-1 + input -2 olmalı
+Scanner scan = new Scanner(System.in);
+System.out.println("Bir sayi giriniz: ");
+int input = scan.nextInt();
+int a0=0;
+int a1=1;
+int toplam;
+System.out.println(input + "Sayısının Fibonacci Serisi: ");
+for(int i = 0; i <= input; i++){
+System.out.println(a0 + ",");
+toplam = a0 + a1;
+a0 = a1;
+a1 = toplam;
+}
+}
+}
