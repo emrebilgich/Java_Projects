@@ -1,0 +1,19 @@
+package java1;
+public class Java1{
+public static void main(String[] args){
+int birler,onlar,yuzler,binler,toplam,temp;
+for(int i = 100 ; i <= 999; i++){
+temp = i ;
+birler = temp % 10;
+temp /= 10;
+onlar = temp % 10;
+temp /= 10;
+yuzler = temp % 10;
+temp /= 10;
+toplam = (birler * birler * birler) + (yuzler * yuzler * yuzler) + (onlar * onlar * onlar);
+if(toplam == i){
+System.out.println(i + "Bir Armstrong sayidir.");
+}
+}
+}
+}
