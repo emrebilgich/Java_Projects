@@ -1,0 +1,189 @@
+package Calisma;
+
+class Hayvanlar {   
+void HayvanEtkinligiBelirt() {
+System.out.println();
+System.out.println();
+System.out.println();
+}
+int GunlukBesinMiktari(){ 
+System.out.println("Hayvanin Gunluk Beslenme Miktari: ");
+return 1;
+}
+}
+
+class Kopek extends Hayvanlar{      
+void HayvanEtkinligiBelirt() {      
+System.out.println("Havliyor...");
+System.out.println("Et yiyor...");
+System.out.println("Kosuyor...");
+}
+int GunlukBesinMiktari() {
+return 10;
+}
+}
+
+class Kedi extends Hayvanlar{      
+void HayvanEtkinligiBelirt(){     
+System.out.println("Miyavliyor...");
+System.out.println("Kedi Mamasi yiyor...");
+System.out.println("Uyuyor...");
+}
+int GunlukBesinMiktari() {
+return 2;
+}
+}
+
+class  Kus extends Hayvanlar{      
+void HayvanEtkinligiBelirt(){    
+System.out.println("Otuyor...");
+System.out.println("Kus yemi yiyor...");
+System.out.println("Ucuyor...");
+}
+int GunlukBesinMiktari() {      
+return 250;
+}
+}
+
+class Kurt extends Hayvanlar{
+void HayvanEtkinligiBelirt(){
+System.out.println("Uluyor...");
+System.out.println("Avlaniyor...");
+System.out.println("Yatiyor...");
+}
+int GunlukBesinMiktari() {
+return 20;
+}
+}
+
+class Ayi extends Hayvanlar{   
+void HayvanEtkinligiBelirt(){      
+System.out.println("Bagiriyor...");
+System.out.println("Bal yiyor...");
+System.out.println("Kis uykusuna yatacak...");
+}
+int GunlukBesinMiktari() {      
+return 30;
+}
+}
+
+class Inek extends Hayvanlar{   
+void HayvanEtkinligiBelirt(){          
+System.out.println("Mooluyor...");
+System.out.println("Ot yiyor...");
+System.out.println("Geziyor...");
+}
+int GunlukBesinMiktari() {  
+return 20;
+}
+}
+
+class Sinek extends Hayvanlar{   
+void HayvanEtkinligiBelirt(){        
+System.out.println("Vızıldıyor...");
+System.out.println("Kan emiyor...");
+System.out.println("Ucuyor...");
+}
+int GunlukBesinMiktari() {      
+return 250;
+}
+}
+
+class Kartal extends Hayvanlar{   
+void HayvanEtkinligiBelirt(){     
+System.out.println("Ucuyor...");
+System.out.println("Tavsan yiyor...");
+System.out.println("Yavrusunu besliyor...");
+}
+int GunlukBesinMiktari() {      
+return 35;
+}
+}
+
+class Aslan extends Hayvanlar{  
+void HayvanEtkinligiBelirt(){     
+System.out.println("Kukruyor...");
+System.out.println("Besleniyor...");
+System.out.println("Avini izliyor...");
+}
+int GunlukBesinMiktari() {    
+return 75;
+}
+}
+
+class Yilan extends Hayvanlar{   
+void HayvanEtkinligiBelirt(){
+System.out.println("Tisliyor...");
+System.out.println("Fare yiyor...");
+System.out.println("Surunuyor...");
+}
+int GunlukBesinMiktari() {
+return 10;
+}
+}
+
+public class AnimalInformation {
+public static void main (String[] args){
+        
+Hayvanlar Kopek1 = new Kopek();
+System.out.println("Kopek Etkinlikleri: ");
+Kopek1.HayvanEtkinligiBelirt();
+System.out.println("Kopegin Gunluk Besin Miktari: " + Kopek1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Kedi1 = new Kedi();
+System.out.println("Kedi Etkinlikleri: ");
+Kedi1.HayvanEtkinligiBelirt();
+System.out.println("Kedinin Gunluk Besin Miktari: " + Kedi1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Kus1 = new Kus();
+System.out.println("Kus Etkinlikleri: ");
+Kus1.HayvanEtkinligiBelirt();
+System.out.println("Kusun Gunluk Besin Miktari: " + Kus1.GunlukBesinMiktari() + " Gram");
+System.out.println("\n");
+        
+Hayvanlar Kurt1 = new Kurt();
+System.out.println("Kurt Etkinlikleri: ");
+Kurt1.HayvanEtkinligiBelirt();
+System.out.println("Kurdun Gunluk Besin Miktari: " + Kurt1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Ayi1 = new Ayi();
+System.out.println("Ayi Etkinlikleri: ");
+Ayi1.HayvanEtkinligiBelirt();
+System.out.println("Ayinin Gunluk Besin Miktari: " + Ayi1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Inek1 = new Inek();
+System.out.println("Inek Etkinlikleri: ");
+Inek1.HayvanEtkinligiBelirt();
+System.out.println("Inegin Gunluk Besin Miktari: " + Inek1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Sinek1 = new Sinek();
+System.out.println("Sinek Etkinlikleri: ");
+Sinek1.HayvanEtkinligiBelirt();
+System.out.println("Sinegin Gunluk Besin Miktari: " + Sinek1.GunlukBesinMiktari() + " Mililitre");
+System.out.println("\n");
+        
+Hayvanlar Kartal1 = new Kartal();
+System.out.println("Kartal Etkinlikleri: ");
+Kartal1.HayvanEtkinligiBelirt();
+System.out.println("Kartalin Gunluk Besin Miktari: " + Kartal1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Aslan1 = new Aslan();
+System.out.println("Aslan Etkinlikleri: ");
+Aslan1.HayvanEtkinligiBelirt();
+System.out.println("Aslanin Gunluk Besin Miktari: " + Aslan1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+Hayvanlar Yilan1 = new Yilan();
+System.out.println("Yilan Etkinlikleri: ");
+Yilan1.HayvanEtkinligiBelirt();
+System.out.println("Yilanin Gunluk Besin Miktari: " + Yilan1.GunlukBesinMiktari() + " Kilogram");
+System.out.println("\n");
+        
+}
+}
