@@ -1,0 +1,32 @@
+package java1;
+import java.util.Scanner ;
+public class JAVA1 {
+    public static void main(String[] args) {
+   
+        Scanner input = new Scanner(System.in);
+        
+        int vize , quiz , genel;
+        double ortalama;
+        
+        System.out.println("Vize notunu giriniz: ");
+        vize = input.nextInt();
+        System.out.println(vize);
+        
+        System.out.println("Quiz notunu giriniz: ");
+        quiz = input.nextInt();
+        System.out.println(quiz);
+        
+        System.out.println("Genel notunu giriniz: ");
+        genel = input.nextInt();
+        System.out.println(genel);
+        
+        
+        System.out.println("Ortalamaya etki eden vize katkı puanınız: "+ vize*0.3);
+        System.out.println("Ortalamaya etki eden quiz katkı puanınız: "+ quiz*0.3);
+        System.out.println("Ortalamaya etki eden final katkı puanınız: "+ genel*0.4);
+        
+        ortalama =(vize*0.3 + quiz*0.3 + genel*0.4);
+        
+        System.out.println("Ortalama Puanınız: "+ ortalama);    
+    }    
+}
