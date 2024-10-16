@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class BiletFiyatiHesaplama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Gidilecek mesafeyi km cinsinden giriniz: ");
+        double mesafe = scanner.nextDouble();
+
+        System.out.print("Yolcunun yaşını giriniz: ");
+        int yas = scanner.nextInt();
+
+        System.out.print("Yolculuk tipini seçiniz (1: Tek Yön, 2: Gidiş-Dönüş): ");
+        int yolculukTipi = scanner.nextInt();
+
+        double birimFiyat = 0.10;  // Örnek olarak km başına 0.10 birim
+        double normalFiyat = mesafe * birimFiyat;
+
+        double yasIndirimi = 0;
+        if (yas < 12) {
+            yasIndirimi = 0.50;  // %50 indirim
+        } else if (yas >= 12 && yas <= 24) {
+            yasIndirimi = 0.10;  // %10 indirim
+        } else if (yas >= 65) {
+            yasIndirimi = 0.30;  // %30 indirim
+        }
+
+        double indirimliFiyat = normalFiyat * (1 - yasIndirimi);
+
+        if (yolculukTipi == 2) {
+            indirimliFiyat *= 0.80;  // Gidiş-dönüş bileti için %20 indirim
+        }
+
+        System.out.println("Bilet fiyatınız: " + indirimliFiyat + " TL");
+    }
+}
